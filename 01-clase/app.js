@@ -9,6 +9,8 @@ const app = new Vue({
         contador3: 0,
         valor2: 2,
         valor3: 3,
+        mostrar: true,
+        mostrar2: true,
     },
     methods:{
       incrementar() {
@@ -20,6 +22,18 @@ const app = new Vue({
       actualizar (e) {
         const dato = e.target.value;
         this.valor2 = dato;
-      }
-    }
+      },
+      cambiarVisibilidad() {
+        this.mostrar2 = !this.mostrar2;
+      },
+      obtenerVisibilidad() {
+        return this.mostrar2 ? 'visible' : 'oculto';
+      },
+      visibilidad() {
+        return {
+          visible: this.mostrar2,
+          oculto: !this.mostrar2,
+        };
+      },
+    },
   });
