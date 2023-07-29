@@ -1,22 +1,26 @@
-// componentes
-import EventBinding from '../components/EventBinding.vue'
+import { createRouter, createWebHistory } from 'vue-router'
+
+import App from '../App.vue'
 import Home from '../components/Home.vue'
 import Blog from '../components/Blog.vue'
-import Routeo from '../components/Routeo.vue'
-/* Array rutas */
- const routes = [
-  {
-    path: '/', component: EventBinding
-  },
-  {
-    path: '/home', component: Home
-  },
-  {
-    path: '/blog', component: Blog
-  },
-  {
-    path: '/routeo', component: Routeo
-  }
+import Calculos from '../pages/Calculos.vue'
 
+const routes = [
+    { path: '/', component: Home },
+    { path: '/inicio', component: Home },
+    { path: '/blog', 
+      component: Blog,
+      children: [ /* rutas anidadas */
+        { path: ':postId', component: Blog }
+      ] 
+    },
+    { path: '/principal', component: App},
+    { path: '/calculos', component: Calculos}
 ]
-export default routes
+
+const router = createRouter({
+    routes: routes,
+    history: createWebHistory()
+})
+
+export default router

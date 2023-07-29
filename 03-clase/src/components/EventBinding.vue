@@ -1,5 +1,5 @@
 <template>
-    <div class="event-binding">
+  <div class="event-binding">
     <!-- -------------------------------------------------- -->
     <h4 class="my-5">Event Binding / v-on ( = directiva )</h4>
     <!-- -------------------------------------------------- -->
@@ -20,27 +20,23 @@
 
 <script>
 export default {
-  name: "EventBinding",
-  data() {
-    return {
-      contador: 0,
-      contador2: 0,
-      contador3: Number(0)
-    };
-  },
-  methods: {
-    incrementar() {
-      this.contador3++;
+    name: 'EventBinding',
+    data() {
+       return {
+         contador: 0,
+         contador2: 123,
+         contador3: 543
+       }    
     },
-    getContador() {
-      return this.contador3;
+    methods: {
+        incrementar() {
+            this.contador3++
+        },
+        getContador() {
+            return this.contador3
+        },
     }
-  }
-
-
-}
+};
 </script>
 
-<style>
-
-</style>
+<style></style>

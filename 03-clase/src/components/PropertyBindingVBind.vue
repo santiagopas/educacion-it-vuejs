@@ -1,5 +1,5 @@
 <template>
-    <div>
+  <div class="property-binding-v-bind">
     <!-- ------------------------------------------------------- -->
     <h4 class="my-5">Property Binding / v-bind ( = directiva )</h4>
     <!-- ------------------------------------------------------- -->
@@ -18,15 +18,13 @@
 
 <script>
 export default {
-  name: "PropertyBinding",
-  data() {
-    return {
-      valor: 456
-    };
-  }
-}
+    name: 'PropertyBindingVBind',
+    data() {
+        return {
+            valor: 456
+        }
+    }
+};
 </script>
 
-<style>
-
-</style>
+<style></style>

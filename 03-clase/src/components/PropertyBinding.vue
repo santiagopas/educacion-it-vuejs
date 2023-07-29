@@ -16,15 +16,14 @@
 
 <script>
 export default {
-  name: "PropertyBinding",
-  data() {
-    return {
-      mensaje: "Hola desde PropertyBinding",
-      mensajeHTML: "<b>Hola desde PropertyBinding</b>"
+    name: 'PropertyBinding',
+    data() {
+        return {
+            mensaje: 'Soy un mensaje de Vue',
+            mensajeHTML: '<strong>Soy un mensaje</strong>'
+        }
     }
-    
-  }
-}
+};
 </script>
 
 <style></style>
