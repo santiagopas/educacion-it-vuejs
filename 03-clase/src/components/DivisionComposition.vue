@@ -17,7 +17,7 @@ export default {
   setup() {
     // ref se usa para crear una variable reactiva para primitivos
     // computed se usa para crear una variable reactiva para objetos
-    
+
     const num1 = ref(0)
     const num2 = ref(0)
 
@@ -36,4 +36,9 @@ export default {
 }
 </script>
 
-<style></style>
+<style>
+body {
+  background-color: #1a1a1a;
+  color: #fff;
+}
+</style>
