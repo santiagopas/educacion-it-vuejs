@@ -40,5 +40,6 @@ export default {
 body {
   background-color: #1a1a1a;
   color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
 }
 </style>
