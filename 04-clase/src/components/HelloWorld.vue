@@ -16,6 +16,7 @@ const count = ref(0)
     <p>
       Edit
       <code>components/HelloWorld.vue</code> to test HMR
+      <p>Sumar total count + 100  {{ count + 100 }}</p>
     </p>
   </div>
 
