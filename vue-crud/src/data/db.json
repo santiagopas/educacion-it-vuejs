@@ -1,0 +1,25 @@
+{
+  "estudiantes": [
+    {
+      "id": 1,
+      "nombre": "Juan",
+      "apellido": "Perez",
+      "edad": 20,
+      "carrera": "Ingenieria en Sistemas"
+    },
+    {
+      "id": 2,
+      "nombre": "Maria",
+      "apellido": "Gonzalez",
+      "edad": 21,
+      "carrera": "Ingenieria en Sistemas"
+    },
+    {
+      "id": 3,
+      "nombre": "Pedro",
+      "apellido": "Gomez",
+      "edad": 22,
+      "carrera": "Ingenieria en Sistemas"
+    }
+  ]
+}
