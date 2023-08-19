@@ -1,19 +1,44 @@
 {
-  "posts": [
+  "estudiantes": [
     {
       "id": 1,
-      "title": "json-server",
-      "author": "typicode"
-    }
-  ],
-  "comments": [
+      "nombre": "nombre 1",
+      "apellido": "apellido 1",
+      "edad": 21,
+      "carrera": "carrera 1"
+    },
     {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "id": 2,
+      "nombre": "nombre 2",
+      "apellido": "apellido 2",
+      "edad": 22,
+      "carrera": "carrera 2"
+    },
+    {
+      "id": 3,
+      "nombre": "nombre 3",
+      "apellido": "apellido 3",
+      "edad": 23,
+      "carrera": "carrera 3"
+    },
+    {
+      "id": 4,
+      "nombre": "nombre 4",
+      "apellido": "apellido 4",
+      "edad": 24,
+      "carrera": "carrera 4"
+    },
+    {
+      "id": 5,
+      "nombre": "nombre 5",
+      "apellido": "apellido 5",
+      "edad": 25,
+      "carrera": "carrera 5"
+    },
+    {
+      "nombre": "test",
+      "apellido": "eqr",
+      "id": 6
     }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+  ]
 }

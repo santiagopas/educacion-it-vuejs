@@ -1,47 +1,47 @@
-<script setup>
-import HelloWorld from './components/HelloWorld.vue'
-import TheWelcome from './components/TheWelcome.vue'
+<script>
+import { RouterLink, RouterView } from "vue-router";
+
+
+export default {
+  name: 'App',
+  components: {
+    RouterLink,
+    RouterView
+  }
+}
+
 </script>
 
 <template>
   <header>
-    <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
-
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-    </div>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Proyecto EIT</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <RouterLink class="nav-link" to="/">Inicio</RouterLink>
+            </li>
+            <li class="nav-item">
+              <RouterLink class="nav-link" to="/sobre-nosotros">Sobre Nosotros</RouterLink>
+            </li>
+            <li class="nav-item">
+              <RouterLink class="nav-link" to="/estudiantes">Estudiantes</RouterLink>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
   </header>
 
-  <main>
-    <TheWelcome />
+  <main class="container mt-3">
+    <RouterView />
   </main>
 </template>
 
-<style scoped>
-header {
-  line-height: 1.5;
-}
+<style scoped></style>
 
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
-}
-
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
-
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
-}
-</style>
